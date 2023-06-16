@@ -161,26 +161,30 @@ if (mix === true) {
   colorOne = 'purple';
 }
 
-// Also, this may be a good opportunity to use a more specific conditional, since the initial values 'red' and 'blue' didn't seem to have any impact on the 'purple' outcome - all that matters above is that mix is true. I'm sure there would be a better way to do this, but something like this is what came to mind right away:
+// I know I'm doing unnecessary extra thinking here... but this may be a good opportunity to use a more specific conditional, since the initial values 'red' and 'blue' didn't seem to have any impact on the 'purple' outcome - all that matters above is that mix is true. I'm sure there would be several better ways to do this, but something like this is what came to mind:
 
 let colorOne = 'red'
 let colorTwo = 'blue'
-let mix = true
+let mix = false
 
-if (mix === true && ((colorOne === 'red' && colorTwo === 'blue') || (colorOne === 'blue' && colorTwo === 'red'))) {
-    colorOne = 'purple';
-    colorTwo = 'purple';
-    console.log('The colors are now', colorOne + "!");
-} else if (mix === true && ((colorOne === 'yellow' && colorTwo === 'red') || (colorOne === 'red' && colorTwo === 'yellow'))) {
-    colorOne = 'orange';
-    colorTwo = 'orange';
-    console.log('The colors are now', colorOne + "!");
-} else if (mix === true && ((colorOne === 'yellow' && colorTwo === 'blue') || (colorOne === 'blue' && colorTwo === 'yellow'))) {
-    colorOne = 'green';
-    colorTwo = 'green';
-    console.log('The colors are now', colorOne + "!");
-} else if (mix === true) {
-    console.log('I can only mix primary colors here!');
+if (mix === true) {
+    if ((colorOne === 'red' && colorTwo === 'blue') || (colorOne === 'blue' && colorTwo === 'red')) {
+        colorOne = 'purple';
+        colorTwo = 'purple';
+        console.log('The colors are now', colorOne + "!");
+    } else if ((colorOne === 'yellow' && colorTwo === 'red') || (colorOne === 'red' && colorTwo === 'yellow')) {
+        colorOne = 'orange';
+        colorTwo = 'orange';
+        console.log('The colors are now', colorOne + "!");
+    } else if ((colorOne === 'yellow' && colorTwo === 'blue') || (colorOne === 'blue' && colorTwo === 'yellow')) {
+        colorOne = 'green';
+        colorTwo = 'green';
+        console.log('The colors are now', colorOne + "!");
+    } else {
+        console.log('I can only mix primary colors here!');
+    }
+} else {
+    console.log(`The colors remain ${colorOne} and ${colorTwo}!`);
 }
 
 // random question - should we be adding semicolons on every line in conditionals?
