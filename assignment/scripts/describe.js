@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// we make a variable called name and set it to a string 'Dane'
+// we use a conditional that says if a defined variable name is exactly the same as (===) 'Mary' then we console.log 'Hi, Mary!'
+// if our previously defined variable for name is anything but 'Mary' we console.log 'How do you do?'
 //
 
 //CODE
@@ -45,10 +45,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// we make a variable secret using let with no initial value (so it is not a constant and can be updated)
+// we make a variable code and give it an initial value of (the number) 123
+// we then make a conditional that says if the variable code exactly matches 123 (=== meaning it has to be a number too), the imbedded code will run where the variable secret is now defined as the string 'super' and the variable code is updated to 2 * its initial value (in this case code will then be 246)
+// THEN another conditional is made where if our variable code's value is greater than the number 250 (regardless of whether the previous conditional was applicable), then our variable secret is updated to the string 'duper'
+// Then after both conditionals are run, we console.log the current value of the variable secret.  In this case 123 becomes 246 (because of the first conditional) and it will console.log 'super' since 246 is less than or equal to 250 (so the second conditional didn't apply any change to secret)
 
 //CODE
 /*
@@ -113,9 +114,9 @@ if (isStudent === true && zip > 80000 ) {
 /*
 let number = 1;
 
-// FIX - number-- decrements number, but the instructions ask to increment. 
+// FIX - number-- decrements number, but the instructions ask to increment.
 // Should be number++.
-number--; 
+number--;
 
 if (number >= 2) {
   console.log('yes');
