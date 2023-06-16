@@ -33,7 +33,7 @@ if (number >= 2) {
 // -- if our previously defined variable for name is anything but 'Mary' we console.log 'How do you do?'
 
 // in this case:
-// since name 'Dane' is not equal to 'Mary', we console,log 'How do you do?'
+// since name 'Dane' is not equal to 'Mary' the first statement is not true, and we console.log 'How do you do?'
 
 //CODE
 /*
@@ -109,6 +109,9 @@ if (isStudent === true && zip > 80000 ) {
   console.log('How about the weather?')
 }
 
+
+// NOTE - I was way more wordy than necessary for this assignment - I just figured I'd explain the full conditional first, then what would happen with the set values for the variables
+
 */
 
 
@@ -163,9 +166,9 @@ if (mix === true) {
 
 // I know I'm doing unnecessary extra thinking here... but this may be a good opportunity to use a more specific conditional, since the initial values 'red' and 'blue' didn't seem to have any impact on the 'purple' outcome - all that matters above is that mix is true. I'm sure there would be several better ways to do this, but something like this is what came to mind:
 
-let colorOne = 'red'
-let colorTwo = 'blue'
-let mix = false
+let colorOne = 'red';
+let colorTwo = 'blue';
+let mix = false;
 
 if (mix === true) {
     if ((colorOne === 'red' && colorTwo === 'blue') || (colorOne === 'blue' && colorTwo === 'red')) {
@@ -181,22 +184,28 @@ if (mix === true) {
         colorTwo = 'green';
         console.log('The colors are now', colorOne + "!");
     } else {
-        console.log('I can only mix primary colors here!');
+        console.log('I can only mix two different primary colors here!');
     }
 } else {
     console.log(`The colors remain ${colorOne} and ${colorTwo}!`);
 }
 
-// random question - should we be adding semicolons on every line in conditionals?
 */
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
-// We check if temp is higher than 39 and if time is greater or equal to  4 
+// We check if temp is higher than 39 and if time is greater or equal to 4 
 // -- they are so we console.log 'throw away the food!'
 
 /*
+
+// FIX - time should use let (instead of const) since time would not be a constant value especially in this case
+// use: let time = 4;
+
 let temp = 40;
 const time = 4;
+
+// FIX - instructions say check if temp is above 39 AND time is greater or equal to 4
+// use: if (temp > 39 && time >= 4)
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
@@ -210,6 +219,9 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+
+// FIX - per instructions, the conditional would console.log 'enter' after checking if age is greater than or equal to minAge
+// use: console.log ('enter'); for the first statement, and console.log('no entry'); on the second.  Alternatively we could have if (age < minAge) as the first condition.
 
 if(minAge <= age) {
   console.log('no entry');
