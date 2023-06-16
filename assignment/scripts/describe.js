@@ -45,11 +45,15 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// we make a variable secret using let with no initial value (so it is not a constant and can be updated)
+// we make a variable secret using let with no initial value (it is not a constant and can be updated)
 // we make a variable code and give it an initial value of (the number) 123
-// we then make a conditional that says if the variable code exactly matches 123 (=== meaning it has to be a number too), the imbedded code will run where the variable secret is now defined as the string 'super' and the variable code is updated to 2 * its initial value (in this case code will then be 246)
+
+// to summarize the conditional: 
+// we make a conditional that says if the variable code exactly matches 123 (=== meaning it has to be a number too), the imbedded code will run where the variable secret is now defined as the string 'super' and the variable code is updated to 2 * its initial value (in this case code will then be 246)
 // THEN another conditional is made where if our variable code's value is greater than the number 250 (regardless of whether the previous conditional was applicable), then our variable secret is updated to the string 'duper'
-// Then after both conditionals are run, we console.log the current value of the variable secret.  In this case 123 becomes 246 (because of the first conditional) and it will console.log 'super' since 246 is less than or equal to 250 (so the second conditional didn't apply any change to secret)
+// Then after both conditionals are run, we console.log the current value of the variable secret.  If code < 250 AND not exactly 123 to start, the secret variable will remain unchanged.
+
+// In this case the code variable starts with value 123 then becomes 246 (because of the first conditional) and it will console.log 'super' since 246 is less than or equal to 250 (so the second conditional didn't apply any change to secret)
 
 //CODE
 /*
@@ -71,10 +75,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// we define the variable isStudent the value of true, the variable age the value of 34, and the variable zip the value of 55407
+
+// to summarize each step of the conditional: 
+// the conditional starts with if isStudent equals the boolean true AND zip is a value greater than 80000, then we console.log 'You're on the West Coast!' and the code in this conditional stops there
+// -- if the above if/then statement wasn't true, then if EITHER isStudent equals the boolean false OR the age variable is a value less than 30, then we console.log 'What are your hobbies?'
+// -- if the above statement didn't apply, if the isStudent variable equals the boolean true, then we console.log 'Welcome to Prime!'
+// -- if every one of the above if/else if scenarios in this conditional did not apply, then we console.log 'How about the weather?'
+
+// in this case's defined variables, isStudent is true, however since the zip is not greater than 8000, so we go to the next statement.
+// -- isStudent is not false AND age is not less than 30 so the || EITHER/OR statement doesn't apply, so we go to the next statement.
+// -- isStudent is true, so we console.log 'Welcome to Prime!'
 
 //CODE
 /*
