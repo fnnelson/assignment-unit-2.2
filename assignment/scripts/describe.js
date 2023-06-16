@@ -113,7 +113,6 @@ if (isStudent === true && zip > 80000 ) {
 
 
 
-
 // REVERSE
 // Now, for questions 4-6, we'll give you a description and some code. 
 // Some of the code will NOT match the description.
@@ -148,9 +147,29 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - instructions have colors for the variables switched.
+// should be let colorOne = 'blue' and let colorTwo = 'red'.
+
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
+
+// FIX - only colorOne was changed to 'purple', but instructions say both should be set to 'purple'
+// code should show colorOne = 'purple' and colorTwo = 'purple'
+
+// Also, this may be a good opportunity to use a more specific conditional, since the initial values 'red' and 'blue' don't seem to have any impact on the 'purple' outcome - all that matters here is that mix is true. I'm just making this up off-hand, but something like this?  I'm not sure that an else would apply since if the mix is false, then nothing would change.
+
+if (mix === false) {
+
+} else if (mix === true && ((colorOne = 'red' && colorTwo = 'blue') || (colorOne = 'blue' && colorTwo = 'red'))){
+  colorOne = 'purple';
+  colorTwo = 'purple';
+} else if (mix === true && ((colorOne = 'yellow' && colorTwo = 'red') || (colorOne = 'red' && colorTwo = 'yellow'))){
+  colorOne = 'orange';
+  colorTwo = 'orange';
+} else if ... {
+  ...
+}
 
 if (mix === true) {
   colorOne = 'purple';
