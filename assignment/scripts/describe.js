@@ -78,14 +78,15 @@ console.log(secret)
 // we define the variable isStudent the value of true, the variable age the value of 34, and the variable zip the value of 55407
 
 // to summarize each step of the conditional: 
-// the conditional starts with if isStudent equals the boolean true AND zip is a value greater than 80000, then we console.log 'You're on the West Coast!' and the code in this conditional stops there
+// -- the conditional starts with if isStudent equals the boolean true AND zip is a value greater than 80000, then we console.log 'You're on the West Coast!' and the code in this conditional stops there
 // -- if the above if/then statement wasn't true, then if EITHER isStudent equals the boolean false OR the age variable is a value less than 30, then we console.log 'What are your hobbies?'
 // -- if the above statement didn't apply, if the isStudent variable equals the boolean true, then we console.log 'Welcome to Prime!'
 // -- if every one of the above if/else if scenarios in this conditional did not apply, then we console.log 'How about the weather?'
 
-// in this case's defined variables, isStudent is true, however since the zip is not greater than 8000, so we go to the next statement.
+// in this case, step by step of the code: 
+// -- isStudent is true, however since the zip is not greater than 8000, we move down to the next statement.
 // -- isStudent is not false AND age is not less than 30 so the || EITHER/OR statement doesn't apply, so we go to the next statement.
-// -- isStudent is true, so we console.log 'Welcome to Prime!'
+// -- isStudent is true, so we console.log 'Welcome to Prime!' and the code stops there in this conditional
 
 //CODE
 /*
